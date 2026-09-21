@@ -1,0 +1,99 @@
+body{
+    font-family:'Yu Gothic', 'Helvetica', 'sans-serif';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: bisque;
+    margin: 0;
+}
+
+.contents {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+header {
+    background-color: pink;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main{
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    flex: 1;
+}
+
+nav{
+    background-color: aquamarine;
+    width: 250px;
+}
+
+nav ul{
+    margin-top: 60px;
+}
+
+nav li{
+    white-space: nowrap;
+}
+
+.form-area{
+    flex: 1;
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+table {
+    width: auto;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 3px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+th{
+    vertical-align: middle;
+    border: 1px solid #000;
+    box-shadow: inset 0.5px 0.5px 0px rgba(0, 0, 0, 0.9);
+}
+
+td {
+    text-align: left;
+    margin: 1px;
+    border: 1px solid #000;
+    box-shadow: inset 0.5px 0.5px 0px rgba(0, 0, 0, 0.9);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 95%; 
+    margin: 0;
+}
+
+textarea{
+    width: 40ch;
+    height: 10ch;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    margin: 5px;
+    position: absolute; /* ← form-area内で絶対配置 */
+    right: 0;            /* ← 右端に寄せる */
+    bottom: 0;
+}
+
+footer {
+    display: inline;
+    background-color: rgb(196, 196, 196);
+    padding: 50px;
+    text-align: center;
+}
