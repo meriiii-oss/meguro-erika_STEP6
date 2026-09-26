@@ -48,7 +48,7 @@
                 </tr>
             </table>
             <div class ="button">
-                <input type="submit" id="buttons" onclick="return getInputValues()"></input>
+                <input type="submit" id="submit" onclick="return getInputValues()"></input>
             </div>
         </form>
         </main>
